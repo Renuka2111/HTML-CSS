@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <h1 id="title">General Application form</h1>
+        
+        <form>
+            <!-- ------------------Personal Details---------------------------- -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div>
+                    <label id="name-label" for="name">Name:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="Enter name here">
+                </div><br>
+                <div>
+                    <label for="address-label">Address:</label>
+                    <input type="Address" id="address" name="Address" placeholder="Enter address here">   
+                </div><br>
+                <div>
+                    <label id="email-label" for="Email">Email:</label>
+                    <input type="email" required id="email" name="user_email" placeholder="Enter email here">  
+                </div><br>
+                <div>
+                    <label id="number-label" for="phone">Phone Number:</label>
+                    <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9"> 
+                </div>
+                <!-- ------------------Radio Buttons-------------------------------- -->
+                <div>
+                    <label for="Gender">Gender:</label>
+                    <p>
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="other"> Other
+                    </p>
+                </div>
+                <label for="date-label">Date of Birth:</label>
+                <input type="date" name="bday">
+
+            </fieldset><br>
+                <!-- ------------------Checkboxes-------------------------------- -->
+            <fieldset>
+                <label for="Gender">Check All That Apply</label>
+                <p>
+                <input type="checkbox" name="degree" value="degree"> I have completed degree.<br>
+                <input type="checkbox" name="age" value="Car"> I am more than 25 years.<br>
+                <input type="checkbox" name="job" value="job"> I am searching for job.<br>
+                <input type="checkbox" name="work" value="work" checked> I work full-time.<br>
+                <input type="checkbox" name="part" value="part" checked> I work part-time.<br>
+                </p>
+            </fieldset><br>
+            <!-- -----------------Dropdown menus--------------------------------- -->
+    
+            <fieldset>
+                <div>
+                <label for="education">Education Level Completed:</label>
+                <select id="dropdown1">
+                <option value="University">University</option>
+                <option value="College">College</option>
+                <option value="Secondary">High School</option>  
+                <option value="None">None</option>
+                </select>
+                </div>
+            </fieldset><br>
+
+            <!-- --------------------Text Areas------------------------------ -->
+    
+            <fieldset>
+                <legend>Essay Section</legend>
+                <div>
+                    <label for="msg"></label>
+                    <p> In 50 words or more explain yourself</p>
+                    <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   
+                </div><br>
+                <div>
+                    <label for="msg">Please upload contact details for 2 references</label><br>
+                    <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   
+                </div>
+                <p>Upload Required Certifiates here:
+                <button>Attach Files</button></p>
+            </fieldset><br>
+
+            <div id="submitbutton">
+                <button type="submit" id="submit">Send your application</button> 
+            </div>
+
+        </form>
+
+    </body>
+</html>

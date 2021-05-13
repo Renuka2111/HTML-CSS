@@ -1,0 +1,74 @@
+*{
+    margin: 0; padding: 0;
+}
+img{
+    width: 100%;
+    float: left;
+}
+.header{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 15px 25px;
+}
+.logo{
+    width: 230px;
+    float: left;
+
+}
+.a{
+    
+    width: 50%;
+    height: 1013px;
+    
+}
+.b{
+    
+    width: 50%;
+    
+}
+.c{
+    
+    width: 50%;
+}
+.d{
+    
+    width: 50%;
+   
+    
+}
+.e{
+    
+    width:50%;
+    height: 614px;
+    
+}
+.f{
+    
+    width:50%;
+   
+}
+.aa{
+    position: absolute;
+    left: -5px;
+    top:1190px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid black;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: url(texture.jpg);
+}
+h2.bb{
+    text-align: center;
+   font-style: italic;
+}
+h2.cc{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
